@@ -13,7 +13,7 @@ services:
     volumes:
       - ./provision/plex:/config
       - ./content/media:/data/media
-    network_mode: bridge
+    # network_mode: host
     ports: # when network: bridge
       - "32400:32400/tcp" 
       - "8324:8324/tcp" # Required if network: bridge
